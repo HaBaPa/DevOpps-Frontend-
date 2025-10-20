@@ -21,7 +21,7 @@ jobs:
         run: flutter pub get
 
       - name: Build Flutter web
-        run: flutter build web --release
+        run: flutter build web --release --no-wasm-dry-run
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
